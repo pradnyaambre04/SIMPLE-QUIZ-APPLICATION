@@ -1,0 +1,120 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(#0007, #0000), #123;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container for the quiz */
+.quiz-container {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 400px;
+    overflow: visible; /* Ensure the container grows with content */
+}
+
+/* Heading Styling */
+h1 {
+    color: #61dafb;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+/* Buttons styling */
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #61dafb;
+    color: #282c34;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #21a1f1;
+}
+
+/* Styling for questions */
+.question {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.options {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Individual option styling */
+.option {
+    padding: 10px 15px;
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.option:hover {
+    background-color: #444;
+}
+
+/* Radio input styling */
+.option input {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #61dafb;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    display: inline-block;
+    margin: 0;
+}
+
+.option input:checked {
+    background-color: #61dafb;
+    border-color: #21a1f1;
+}
+
+/* Styling when option is selected */
+.option input:checked + label {
+    background-color: #61dafb;
+    color: #282c34;
+}
+
+/* Styling for the label text of the option */
+.option label {
+    margin-left: 5px;
+    flex-grow: 1;
+    font-size: 16px;
+}
+
+/* Result styling */
+#result h2 {
+    color: #61dafb;
+}
+
+#statusMessage {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
